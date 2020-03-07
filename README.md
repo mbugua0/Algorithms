@@ -4,3 +4,6 @@ Using loop to select the smallest element from the unsorted portion of an array 
 
 2. Linear Search:-
 Using loop to traverse through the entire array to search for an element. 
+
+3.Array Sum:-
+Given an array of integers, find the sum of its elements.
