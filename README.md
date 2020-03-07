@@ -22,3 +22,5 @@ The first line of the input consists of an integer .
 The next line contains  space-separated integers contained in the array.
 Output Format
 Print the integer sum of the elements in the array.
+
+6. Bubble Search:- We start at the front of the array and compare each pair of numbers. If they are out of order(ascending order), we swap them. Then, we move to the next pair and repeat the same process.This sorting algorithm is therefore called Bubble Sort because we continuously swap the largest element in the unsorted portion to the right until it is in its right position; the repetively swapping resembles the way bubbles rising to the surface.
