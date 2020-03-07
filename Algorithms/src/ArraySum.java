@@ -5,14 +5,8 @@ import java.util.*;
 import java.util.regex.*;
 
 public class ArraySum {
-
-    /*
-     * Complete the simpleArraySum function below.
-     */
+    
     static int simpleArraySum(int[] ar) {
-        /*
-         * Write your code here.
-         */
          int len = ar.length;
          int sum = 0;
          for (int i = 0; i < len; i++ ){
