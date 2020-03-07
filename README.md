@@ -12,3 +12,13 @@ Given an array of integers, find the sum of its elements.
 a[0]>b[0], so Alice receives  point.
 a[0]=b[0], so nobody receives a point.
 a[0]<b[0], so Bob receives  point.
+
+5. Very Big Sum:- 
+Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.
+aVeryBigSum has the following parameter(s):
+ar: an array of integers .
+Input Format
+The first line of the input consists of an integer .
+The next line contains  space-separated integers contained in the array.
+Output Format
+Print the integer sum of the elements in the array.
