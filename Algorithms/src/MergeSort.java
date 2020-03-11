@@ -21,6 +21,8 @@ public class MergeSort {
 		int[] left;
 		int[] right;
 		
+		//if length is divisible by two we create two equal arrays in size
+		//else the right subarray is gets more elements
 		if (len%2 == 0){
 			left = new int[len/2];
 			right = new int[len/2];
@@ -30,6 +32,7 @@ public class MergeSort {
 		}
 		
 		for(int i = 0; i < len; i++ ){
+			//assign the left and right subarrays elements 
 			if(i < len/2){
 				left[i] = list[i];
 			}else{
@@ -38,7 +41,7 @@ public class MergeSort {
 		}
 		
 		//recursive splitting
-		//Check if the length of subarray is greater than 1 before recursion
+		//check if the length of subarray is greater than 1 before recursion
 		if (left.length > 1){
 		left = mergeSort(left);
 		}
@@ -54,28 +57,28 @@ public class MergeSort {
 	
 	public static int[] merge(int[] left,int[] right){
 		
-		int i = 0;
-		int n = 0;
+		int l = 0;
+		int r = 0;
 		int index = 0;
 		// create space for the merged array
 		int[] merged = new int[left.length + right.length];
 		// add until one subarray is deplete
-		while(i < left.length && n < right.length){
-			if (left[i] < right[n]){
-				merged[index++] = left[i++];
+		while(l < left.length && r < right.length){
+			if (left[l] < right[r]){
+				merged[index++] = left[l++];
 			}else{
-				merged[index++] = right[n++];
+				merged[index++] = right[r++];
 			}
 		}
 		
 		// add every leftover element from the subarray 
 		// only one of these two while loops will be executed
-		while(i < left.length){
-			merged[index++] = left[i++];
+		while(l < left.length){
+			merged[index++] = left[l++];
 		}
 		
-		while(n < right.length){
-			merged[index++] = right[n++];
+		while(r < right.length){
+			merged[index++] = right[r++];
 		}
 		
 		return merged;
