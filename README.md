@@ -27,4 +27,6 @@ Print the integer sum of the elements in the array.
 
 7. Diagonal Difference:- Take a square matrix, calculate the absolute difference between the sums of its diagonals.
 
-8. Merge Sort:- we recursively split and sort the left half and the right half of an array; once they are sorted, we combine them. It's faster but is memory intensive
+8. Merge Sort:- we recursively split and sort the left half and the right half of an array; once they are sorted, we combine them. It's faster but is memory intensive.
+
+9. Binary Search:- works on sorted list, where we divided the list in two from beginning to middle and middle+1 to the end.This happens recursively until we find the element in the list.
