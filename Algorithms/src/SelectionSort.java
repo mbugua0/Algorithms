@@ -21,7 +21,7 @@ public class SelectionSort {
                     check = true;
                 }
             }
-            if (check == true){
+            if (check){
                 myList[index] = myList[i];
                 myList[i] = first;
             }
